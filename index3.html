@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table> <!--Used to represent real life table data-->
+        <caption>
+            <h2>Student-List</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="2">Information </th>
+
+            </tr>
+        </thead>
+
+        <body>
+            <tr>
+                <td>Sawali</td>
+                <td> 1</td>
+            </tr>
+            <tr>
+                <td>Rani</td>
+                <td> 2</td>
+            </tr>
+            <tr>
+                <td>Sayali</td>
+                <td> 3</td>
+            </tr>
+            <tr>
+                <td>khushi</td>
+                <td> 4</td>
+            </tr>
+            <tr>
+                <td>Janhavi</td>
+                <td> 5</td>
+            </tr>
+        </body>
+
+    </table>
+    <br><br>
+    <hr>
+
+    <!--Form in HTML: Forms are used to collect data  from the User-->
+    <!--Action: Attribute used to define what action need to be performed when a form is submitted-->
+    <!--Label: used to give user a reader specifically for visually impaired -->
+    <h1>Student </h1>
+    <form action="/action.php">
+        <input type="text" placeholder="Enter your name" name="name" required>
+        <br>
+        <br>
+        <input type="number" placeholder="Enter your age" name="age" required>
+        <br><br>
+        <input type="email" placeholder="Enter your email" name="email" required>
+        <br><br>
+        <input type="password" placeholder="Enter your password" name="password" required>
+        <br><br>
+        <h3>Select Your Class:</h3>
+        <label for="101">
+            <input type="radio" value="Class XI" name="class XI" id="101">Class XI
+        </label>
+        <br><br>
+        <label for="102">
+            <input type="radio" value="Class XII" name="classXII" id="102">Class XII
+        </label>
+        <br>
+        <br>
+        <h3>Select your Subjects:</h3>
+        <br><br>
+        <label for="Maths">
+            <input type="checkbox" value="Maths" name="subject" id="101">Maths
+            <input type="checkbox" value="Science" name="subject" id="102">Science
+            <input type="checkbox" value="English" name="subject" id="103">English
+            <input type="checkbox" value="History" name="subject" id="104">History
+            <input type="checkbox" value="Geography" name="subject" id="105">Geography
+        </label>
+        <br>
+        <br>
+        <h3>Select Your City:</h3>
+        <select name="city">
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Solapur">Solapur</option>
+        </select>
+        <br>
+        <br>
+        <h3>Feedback Time:</h3>
+        <textarea name="feedback" id="101" placeholder="Please Give your valuable Feedback" rows="5"
+            cols="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <hr>
+
+    <!--Iframe tag-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HQJriLZEnWs?si=AaioU3ywTWpQXwfT"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br><br>
+    <!--Video tag-->
+    <video height="500" width="500" src="/Folder/2759477-uhd_3840_2160_30fps.mp4" controls autoplay>My Video</video>
+
+
+
+</body>
+
+</html>
